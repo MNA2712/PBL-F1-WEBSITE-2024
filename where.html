@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Where</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.php">About</a>
+            <a href="where.html" class="active">Where</a>
+            <a href="booking.html">Booking</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <section class="where-content">
+        <h2>Our Top Locations</h2>
+        
+        <!-- Mini Maps Section -->
+        <div class="map-grid">
+            <!-- Mini Map 1 -->
+            <div class="map-item">
+                <h3>Hawaii</h3>
+                <iframe 
+                    src="https://www.neh.gov/sites/default/files/2018-06/hawaii_roadtrip.jpg" 
+                    width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+            <!-- Mini Map 2 -->
+            <div class="map-item">
+                <h3>Alaska</h3>
+                <iframe 
+                    src="https://www.polartrec.com/files/styles/journal_700/public/members/1701/images/screen-shot-2020-02-14-at-3-19-28-pm_orig.png?itok=lKg3z7LV" 
+                    width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+            <!-- Mini Map 3 -->
+            <div class="map-item">
+                <h3>Borneo</h3>
+                <iframe 
+                    src="https://www.scribblemaps.com/api/maps/images/vKTlOUlzcW_thumb_1200x630.jpg" 
+                    width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+            <!-- Mini Map 4 -->
+            <div class="map-item">
+                <h3>Pulau Tioman</h3>
+                <iframe 
+                    src="https://static.planetminecraft.com/files/resource_media/screenshot/1418/tiomanislandrlmap2_lrg.jpg" 
+                    width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+        <section class="cards">
+            <!-- Booking Card -->
+            <div class="card">
+                <img src="https://i.fbcd.co/products/resized/resized-750-500/c-1000-2-airplane-clouds-06-05-9a406f882f66b5781169d3235ced80056397bafba8a94f52cbbb65b7cac51846.jpg" alt="Plane Image">
+                <h3>Hatyai is a nice country to go</h3>
+                <a href="booking.html">GET STARTED</a>
+            </div>
+    
+            <!-- About Card -->
+            <div class="card">
+                <img src="https://adventure.com/wp-content/uploads/2017/08/Thailand-Ang-Thong-Marine-Park-Photo-credit-Shutterstock-Don-Mammoser-1920x1080.jpg" alt="Island Image">
+                <h3>Shanghai is very good to go in holidays</h3>
+                <a href="booking.html">GO TO</a>
+            </div>
+    
+            <!-- Where Card -->
+            <div class="card">
+                <img src="https://ern5nupvb62.exactdn.com/wp-content/uploads/2023/08/Oahu-Hawaii.jpg?lossy=1&quality=80&sharp=1&ssl=1" alt="Resort Image">
+                <h3>Get an interesting vacation to Jakarta</h3>
+                <a href="booking.html">LET'S GO</a>
+            </div>
+        </section>
+        <section class="about-content">
+            <div class="box">
+                <p>
+                    You can choose you destinations here by clicking on the link above
+                </p>
+            </div>
+    
+
+    <!-- Main Content -->
+    <section class="where-content">
+        <h2></h2>
+        
+        <!-- Mini Maps Section -->
+        <div class="map-grid">
+            <!-- Add your existing mini maps code here -->
+        </div>
+
+        <!-- Feedback Section -->
+        <section class="feedback-section">
+            <h2>Leave Your Feedback</h2>
+
+            <!-- Feedback Form -->
+            <form id="feedbackForm" action="where.html" method="POST">
+                <textarea name="feedback" placeholder="Write your feedback here..." required></textarea>
+                <button type="submit">Submit Feedback</button>
+            </form>
+
+            <div class="feedbacks">
+                <h3>Recent Feedbacks</h3>
+                
+            </div>
+        </section>
+    </section>
+
+</body>
+</html>
+
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+  background: url('https://wallpapers.com/images/featured-full/light-blue-2iuzyh711jo9bmgo.jpg') no-repeat center center/cover; /* Replace with the actual URL of your image */
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+header {
+    background-color: #0d0d0e;
+    padding: 10px 0;
+}
+
+header h1 {
+    font-size: 32px;
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav a.active, nav a:hover {
+    border-bottom: 2px solid white;
+}
+   /* General Styling for the Where Page */
+.where-content {
+    margin: 30px auto;
+    max-width: 80%;
+    text-align: center;
+    color: white;
+}
+
+/* Mini Maps Grid */
+.map-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.map-item {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    
+}
+
+.map-item h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* Cards Section */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px auto;
+    max-width: 90%;
+}
+
+.card {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.card a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+.feedback-section {
+    margin-top: 50px;
+}
+
+.feedback-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Feedback Form */
+.feedback-section form {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.feedback-section textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+    outline: none;
+}
+
+.feedback-section textarea:focus {
+    border: 1px solid #00bfff;
+}
+
+.feedback-section button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.feedback-section button:hover {
+    background-color: #0056b3;
+}
+
+/* Feedbacks Display */
+.feedbacks {
+    margin-top: 30px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+.feedbacks p {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+</style>

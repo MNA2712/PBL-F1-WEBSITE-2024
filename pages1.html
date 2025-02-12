@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking.com Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Booking</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.php">About</a></li>
+        <li><a href="where.html">Where</a></li>
+        <li><a href="booking.html">Booking</a></li>
+      </ul>
+    </nav>
+    <div class="user-controls">
+      <a href="#">List your property</a>
+      <a href="register.html">Register</a>
+      <a href="#">Sign in</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2 class="highlight-text">Hatyai</h2>
+      <p class="highlight-text">Find the apartments that appeal to you the most</p>
+      <button class="book-now">Book Now</button>
+    </section>
+
+    <section class="filters">
+      <div class="filter">
+        <label for="check-in">Check-in:</label>
+        <input type="date" id="check-in" name="check-in">
+      </div>
+      <div class="filter">
+        <label for="check-out">Check-out:</label>
+        <input type="date" id="check-out" name="check-out">
+      </div>
+      <div class="filter">
+        <label for="guests">Guests:</label>
+        <input type="number" id="guests" name="guests" min="1" value="2"> adults
+        <input type="number" id="children" name="children" min="0" value="0"> children
+      </div>
+      <div class="filter">
+        <label for="rooms">Rooms:</label>
+        <input type="number" id="rooms" name="rooms" min="1" value="1">
+      </div>
+    </section>
+
+    <section class="calendar">
+      <!-- Calendar content goes here -->
+    </section>
+
+    <section class="results">
+      <!-- Results content goes here -->
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Booking.com Clone. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Add JavaScript for interactivity
+    document.querySelector("form").addEventListener("submit", function(event) {
+      event.preventDefault();
+      alert("Search initiated!");
+    });
+  </script>
+  
+  <style>
+  /* General styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+  }
+
+  /* Header styles */
+  header {
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+
+  nav li {
+    margin-right: 1.5rem;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+
+  nav a:hover {
+    color: #ff6347;
+  }
+
+  .user-controls a {
+    margin-left: 1rem;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .user-controls a:hover {
+    color: #ff6347;
+  }
+
+  /* Hero section */
+  .hero {
+  background: url('https://cdn.libur.com.my/2019/07/hat-yai.jpg-12_16_807124.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 2rem;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 30vh; /* Further reduced height for a smaller image */
+}
+
+  .hero .highlight-text {
+  display: inline; /* Ensures the border fits around the text */
+  background-color: rgba(255, 99, 71, 0.8); /* Semi-transparent red background */
+  color: white;
+  border-radius: 5px;
+  padding: 0.2rem 0.4rem; /* Minimal padding to ensure the border hugs the text */
+}
+
+  .hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem; /* Reduced the space between the header and paragraph */
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem; /* Reduced the space between the paragraph and button */
+  }
+
+  .book-now {
+    background-color: #ff6347;
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+  }
+
+  .book-now:hover {
+    background-color: #e5533d;
+  }
+
+  /* Filters */
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3rem 2rem;
+  }
+
+  .filter {
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    min-width: 200px;
+  }
+
+  .filter label {
+    font-weight: bold;
+  }
+
+  .filter input {
+    margin-top: 0.5rem;
+    padding: 0.6rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  /* Calendar section */
+  .calendar {
+    padding: 3rem;
+    text-align: center;
+  }
+
+  /* Footer styles */
+  footer {
+    background-color: #007bff;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  footer p {
+    margin: 0;
+  }
+</style>
+
+</body>
+</html>

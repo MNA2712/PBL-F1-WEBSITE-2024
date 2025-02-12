@@ -1,0 +1,201 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: url('https://media.delius-klasing.de/dk-wassersport/images/dpr_auto,fl_progressive,f_auto,c_fill,g_face:auto,h_475,w_712/q_auto:eco/boot/8b31f2fbd71b66c59883973280663d495988cff9_154602cd298970bd8140e3a6483bc1bb/-thailand-andaman-sea') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+header {
+    background-color: #004085;
+    padding: 10px 0;
+}
+
+header h1 {
+    font-size: 32px;
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav a.active, nav a:hover {
+    border-bottom: 2px solid white;
+}
+
+/* About Section */
+.about-content {
+    margin: 30px auto;
+    max-width: 80%;
+}
+
+.about-content .box {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+/* Login Form */
+.login-form {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.login-form h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.login-form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #ddd;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+.login-form input:focus {
+    outline: 2px solid #0056b3;
+}
+
+.login-form button {
+    background-color: #004085;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #0056b3;
+}
+
+/* General Styling for the Where Page */
+.where-content {
+    margin: 30px auto;
+    max-width: 80%;
+    text-align: center;
+    color: white;
+}
+
+/* Mini Maps Grid */
+.map-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.map-item {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.map-item h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* Cards Section */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px auto;
+    max-width: 90%;
+}
+
+.card {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.card a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* Editable Box Styling */
+.editable-box {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: 30px;
+    color: white;
+}
+
+.editable-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.editable-box p {
+    font-size: 16px;
+    color: #ddd;
+    border: 1px dashed #aaa;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    cursor: text;
+    min-height: 50px;
+}
+
+.editable-box p:focus {
+    border: 1px solid #00bfff;
+}

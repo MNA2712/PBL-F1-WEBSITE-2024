@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Booking Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Booking</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.php">About</a>
+      <a href="where.html">Where</a>
+      <a href="booking.html">Booking</a>
+    </nav>
+  </header>
+
+  <section class="main">
+    <div class="welcome">
+      <h3>
+        DEALS FOR THIS WEEKEND
+      </h3>
+    </div>
+  </section>
+
+
+  <section class="cards">
+    <div class="card">
+      <img src="https://cdn.libur.com.my/2019/07/hat-yai.jpg-12_16_807124.jpg" alt="Plane Image">
+      <h3>Hatyai</h3>
+      <a href="pages1.html">MYR 2400</a>
+    </div>
+
+    <div class="card">
+      <img src="https://static.independent.co.uk/2023/08/07/12/iStock-587787576%20shanghai.jpg?width=1200" alt="Island Image">
+      <h3>Shanghai</h3>
+      <a href="pages2.html">MYR 2700</a>
+    </div>
+
+    <div class="card">
+      <img src="https://fk.ui.ac.id/iro/wp-content/uploads/2021/03/Jakarta.jpg" alt="Resort Image">
+      <h3>Jakarta</h3>
+      <a href="pages3.html">MYR 600</a>
+    </div>
+  </section>
+
+  
+  <section class="cards">
+    <div class="card">
+      <img src="https://www.wanderlustmagazine.com/wp-content/uploads/2023/11/5-wat-saket-shutterstock_1099129721jpg-web.jpg" alt="Plane Image">
+      <h3>Bangkok</h3>
+      <a href="pages4.html">MYR 375</a>
+    </div>
+    <div class="card">
+        <img src="https://www.nagasaki-tabinet.com/storage/special_features/276/responsive_images/bLSMpZQoOMOy6dnhlxAlWc4Gx4ajNpRNpD47FgfV__1639_1092.jpeg" alt="Plane Image">
+        <h3>Nagasaki</h3>
+        <a href="pages5.html">MYR 2500</a>
+      </div>
+      <div class="card">
+        <img src="https://www.pelago.com/img/destinations/seoul/hero-image-xlarge.webp" alt="Plane Image">
+        <h3>Seoul</h3>
+        <a href="pages6.html">MYR 3000</a>
+      </div>
+      </section>
+
+      <section class="main">
+        <div class="welcome">
+          <h3>
+            BROWSE BY PROPERTY TYPE
+          </h3>
+        </div>
+      </section>
+
+      <section class="cards">
+        <div class="card">
+          <img src="https://www.usatoday.com/gcdn/-mm-/05b227ad5b8ad4e9dcb53af4f31d7fbdb7fa901b/c=0-64-2119-1259/local/-/media/USATODAY/USATODAY/2014/08/13/1407953244000-177513283.jpg" alt="Plane Image">
+          <h3>Hotels</h3>
+          <a href="pages7.html">MYR 475</a>
+        </div>
+        <div class="card">
+            <img src="https://www.apartments.com/blog/sites/default/files/styles/large/public/image/2023-06/ParkLine-apartment-in-Miami-FL.jpg?itok=wuPUc6GK" alt="Plane Image">
+            <h3>Apartments</h3>
+            <a href="pages8.html">MYR 300</a>
+          </div>
+          <div class="card">
+            <img src="https://a4adc62bfbeb9287c6cc-44a9442b068bb36d5792597640a019e7.ssl.cf1.rackcdn.com/u/_destination/xpm/riviera-maya-resort-sunrise.jpg" alt="Plane Image">
+            <h3>Resorts</h3>
+            <a href="pages9.html">MYR 800</a>
+          </div>
+          <div class="card">
+            <img src="https://www.impiana.com.my/wp-content/uploads/sites/142/2016/03/seminyak-website-april-2016.jpg" alt="Plane Image">
+            <h3>Villas</h3>
+            <a href="pages10.html">MYR 1000</a>
+          </div>
+          </section>
+
+<style>
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: url('https://wallpapers.com/images/featured-full/light-blue-2iuzyh711jo9bmgo.jpg') no-repeat center center/cover; /* Removed the previous background image */
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+header {
+    background-color: #0d0d0e;
+    padding: 10px 0;
+}
+
+header h1 {
+  font-size: 32px;
+  color: white;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+}
+
+nav a.active, nav a:hover {
+  border-bottom: 2px solid white;
+}
+
+/* Welcome Section */
+.main {
+  margin: 20px auto;
+  background: rgba(0, 0, 0, 0.6);
+  width: 50%;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.welcome p {
+  margin-bottom: 15px;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+/* Cards Section */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px auto;
+  max-width: 90%;
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  border-radius: 5px;
+  width: 300px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  border-radius: 5px;
+}
+
+.card h3 {
+  margin: 10px 0;
+}
+
+.card a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+</style>
+</body>
+</html>
